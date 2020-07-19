@@ -21,6 +21,7 @@ ul{
 nav {
     background-color: #93e6ce;
     padding: 20px;
+    border-bottom: 2px solid black;
 
 
 }
@@ -50,33 +51,123 @@ nav a:hover{
     transition: ease-in 0.2s;
 }
 
-
+@media screen and (max-width: 600px) {
+    .logo {
+        
+        clear: both;
+        margin-bottom: 50px;
+    }
+    nav a {
+    
+      float: none;
+      width: 100%;
+    }
+  }
 /*-----mainbody---*/
 
 .services{
-    background-color: teal;
+    background-color:white; 
+    height: 50vh;
 }
-
+h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
 .content {
-    border: 2px solid black;
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    
+    float: left;
+    width: 30.33%;
+    margin: 0 0 0 35px;
+    padding: 15px 0;
+    box-shadow: 0 0 20px #93e6ce;
+    background-color: #93e6ce;
+    height: 300px;
+    overflow: auto;
+}
+.content:hover{
+    box-shadow: 0 0 20px teal;
+}
+.content p{
+    padding: 0 50px;
+}
+.services{
+    text-align: center;
+}
+.left {
+    margin-top: 15px;
+}
+.services:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width:600px) {
+    .content {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      
+    }
+
+  }
+/*-----mainbody---*/
+/*----left-right---*/
+
+.left-right{
+    height: 25vh;
+}
+.left-right p{
+    padding: 0 40px;
+}
+.left-right h3{
+    padding: 20px 0;
+}
+.unequal{
+    float: left;
+    margin: 20px;
+    height: 160px;
+}
+.left-right .left {
+    width: 955px;
+    background-color: #93e6ce;
+    margin-left: 35px;
 }
 
+.left-right .right{
+    width: 30.33%;
+    background-color: #93e6ce;
+}
+
+.left-right:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.socials li{
+    display: inline-block;
+    float: left;
+    margin: 0 55px;
+    font-size: 40px;
+}
+@media screen and (max-width: 800px) {
+    .left-right .left, .left-right .right {   
+      width: 100%;
+      padding: 0;
+      margin-left: 0px;
+    }
+  }
 
 
 
-
-
-/*-----mainbody---*/
+/*----left-right---*/
 /*-----footer---*/
 footer {
     width: 100%;
     height: auto;
     text-align: center;
     border-top: 2px solid black;
-    padding: 20px 0 0 0;
+    padding: 20px 0;
     font-size: 20px;
+    margin-top: 20px;
 }
