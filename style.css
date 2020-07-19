@@ -49,3 +49,34 @@ nav a:hover{
     color: white;
     transition: ease-in 0.2s;
 }
+
+
+/*-----mainbody---*/
+
+.services{
+    background-color: teal;
+}
+
+.content {
+    border: 2px solid black;
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    
+}
+
+
+
+
+
+
+/*-----mainbody---*/
+/*-----footer---*/
+footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 20px 0 0 0;
+    font-size: 20px;
+}
